@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: solid 1px white  */
+}
+
+body{
+    background-color: var(--lightBlack);
+    color: var(--white);
+}
+/* ------------ VARIABLES ------------------- */
+:root{
+    --white: #ffffff;
+    --red: #cd1313;
+    --lightBlack: #000000e6;
+    --texts: #949494;
+    --gray:  #1E1E1E;
+ 
+}
+
+/* -------------- CLASES REUTILIZABLE ------------------- */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.cinema{
+    color: var(--red);
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--red);
+    color: rgba(246, 240, 240, 0.934);
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 1px 1px 30px -5px #000000b3;
+    transition: all 0.5s;
+
+}
+.btn:hover{
+    background-color: #a90f0f;
+}
+
+.btn2{
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgba(246, 240, 240, 0.934);
+    background: var(--gray);
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 1px 1px 30px -5px #000000b3;
+    transition: all 0.5s;
+
+}
+
+.btn2:hover{
+    background-color: var(--red);
+}
+
+/* -------------- NAVEGACION ------------------- */
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--lightBlack);
+    color: var(--white);
+    position: fixed;
+    z-index: 10;
+}
+
+.container-navbar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1400px;
+}
+
+header .logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo a{
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.items-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items-nav a{
+    color: var(--white);
+    margin-left: 40px;
+}
+
+.navbar{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin-left: 20px;
+}
+
+/* -------------- PORTADA ------------------- */
+
+.cover{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.box-text-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 100%;
+    height: 800px;
+}
+.text-cover{
+    width: 600px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+
+}
+
+.text-cover h1{
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.text-cover p{
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.text-cover input{
+    padding: 0 20px;
+    width: 400px;
+    height: 35px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border:rgba(196, 196, 196, 0.3);
+    border-radius: 20px;
+    background: rgba(196, 196, 196, 0.3) url(../images/search.svg) no-repeat 360px;
+    background-size: 20px;
+    outline: none;
+    color: white;
+    margin-bottom: 25px;
+}
+
+/* -------------- PELICULAS ------------------- */
+
+
+.movies-container{
+    margin-top: -170px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    justify-content: center;
+}
+.card-muvie{
+    border-radius: 20px;
+    margin: 30px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    z-index: 2;
+
+}
+.card-muvie img{
+    width: 100%;
+    height: 90%;
+}
+.card-muvie h4{
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 500;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto{
+    background-color: white;
+    height: 100vh;
+    color: black;
+}
